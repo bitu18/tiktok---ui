@@ -4,18 +4,18 @@ import { faEllipsisVertical, faPlus } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { Link } from 'react-router-dom';
-import {
-    InboxIcon,
-    MessageIcon,
-    UploadIcon,
-    ProfileIcon,
-    CoinIcon,
-    SettingsIcon,
-    LanguageIcon,
-    HelpIcon,
-    ShortcutsIcon,
-    LogoutIcon,
-} from '../../../component/Icons/Icons';
+// import {
+//     UploadIcon,
+//     InboxIcon,
+//     MessageIcon,
+//     ProfileIcon,
+//     CoinIcon,
+//     SettingsIcon,
+//     LanguageIcon,
+//     HelpIcon,
+//     ShortcutsIcon,
+//     LogoutIcon,
+// } from '~/component/Icons/Icons';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';
@@ -30,36 +30,36 @@ const cx = classNames.bind(styles);
 
 const currentUser = true;
 
-const MENU_ITEMS = [
-    {
-        icon: <LanguageIcon />,
-        title: 'English',
-        children: {
-            title: 'Language',
-            data: [
-                {
-                    type: 'language',
-                    code: 'en',
-                    title: 'English',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-            ],
-        },
-    },
-    {
-        icon: <HelpIcon />,
-        title: 'Feedback and help',
-        to: '/feedback',
-    },
-    {
-        icon: <ShortcutsIcon />,
-        title: 'Keyboard shortcuts',
-    },
-];
+// const MENU_ITEMS = [
+//     {
+//         icon: <LanguageIcon />,
+//         title: 'English',
+//         children: {
+//             title: 'Language',
+//             data: [
+//                 {
+//                     type: 'language',
+//                     code: 'en',
+//                     title: 'English',
+//                 },
+//                 {
+//                     type: 'language',
+//                     code: 'vi',
+//                     title: 'Tiếng Việt',
+//                 },
+//             ],
+//         },
+//     },
+//     {
+//         icon: <HelpIcon />,
+//         title: 'Feedback and help',
+//         to: '/feedback',
+//     },
+//     {
+//         icon: <ShortcutsIcon />,
+//         title: 'Keyboard shortcuts',
+//     },
+// ];
 
 function Header() {
     // const { userInfor } = useForm();
@@ -68,30 +68,30 @@ function Header() {
         console.log(menuItem);
     };
 
-    const userMenu = [
-        {
-            icon: <ProfileIcon />,
-            title: 'View Profile',
-            // to: `/account/@${userInfor?.name}`,
-        },
-        {
-            icon: <CoinIcon />,
-            title: 'Get Coins',
-            to: '/coin',
-        },
-        {
-            icon: <SettingsIcon />,
-            title: 'Settings',
-            to: '/settings',
-        },
-        ...MENU_ITEMS,
-        {
-            icon: <LogoutIcon />,
-            title: 'Log out',
-            to: '/logout',
-            separate: true,
-        },
-    ];
+    // const userMenu = [
+    //     {
+    //         icon: <ProfileIcon />,
+    //         title: 'View Profile',
+    //         // to: `/account/@${userInfor?.name}`,
+    //     },
+    //     {
+    //         icon: <CoinIcon />,
+    //         title: 'Get Coins',
+    //         to: '/coin',
+    //     },
+    //     {
+    //         icon: <SettingsIcon />,
+    //         title: 'Settings',
+    //         to: '/settings',
+    //     },
+    //     ...MENU_ITEMS,
+    //     {
+    //         icon: <LogoutIcon />,
+    //         title: 'Log out',
+    //         to: '/logout',
+    //         separate: true,
+    //     },
+    // ];
 
     return (
         <header className={cx('wrapper')}>
@@ -102,7 +102,7 @@ function Header() {
 
                 <Search />
 
-                <div className={cx('actions')}>
+                {/* <div className={cx('actions')}>
                     {currentUser ? (
                         <>
                             <Tippy delay={[0, 200]} content="Upload Video" placement="bottom" offset={[0, 0]}>
@@ -139,7 +139,7 @@ function Header() {
                             </button>
                         )}
                     </Menu>
-                </div>
+                </div> */}
             </div>
         </header>
     );
