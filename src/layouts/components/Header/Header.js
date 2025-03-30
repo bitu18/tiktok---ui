@@ -15,7 +15,7 @@ import {
     HelpIcon,
     ShortcutsIcon,
     LogoutIcon,
-} from '../../../component/Icons';
+} from 'src/component/Icons';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';
