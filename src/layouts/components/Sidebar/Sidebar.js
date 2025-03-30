@@ -8,7 +8,7 @@ import {
     UserGroupIconActive,
     LiveIcon,
     LiveIconActive,
-} from '~/component/Icons';
+} from 'src/component/Icons';
 import config from '~/config';
 import SuggestedAccounts from '~/component/SuggestedAccounts';
 
