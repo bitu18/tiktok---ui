@@ -1,5 +1,6 @@
-function Home() {
-    return <h2 style={{ height: 2000 }}>Home Page</h2>;
-}
+import React, { useState, useRef, useEffect } from 'react';
+import ReactPlayer from 'react-player';
+
+function Home() {}
 
 export default Home;

@@ -1,5 +1,5 @@
 const images = {
-    logoTiktok: require('~/assets/images/logoTiktok.svg').default,
+    logoGaming: require('~/assets/images/WHITE.png'),
     defaultImage: require('~/assets/images/default-image.jpg'),
 };
 

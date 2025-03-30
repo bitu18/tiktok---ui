@@ -12,7 +12,7 @@
     width: 100%;
     height: var(--default-layout-header-height);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
-    background-color: var(--white-color);
+    background-color: var(--black-color);
 }
 .inner {
     height: 100%;
@@ -24,6 +24,11 @@
 }
 .logo-link {
     display: flex;
+
+    .logo {
+        height: 50px;
+        margin-bottom: 9px;
+    }
 }
 
 // Actions

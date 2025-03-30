@@ -24,6 +24,7 @@ import Menu from '~/component/Popper/Menu';
 import Image from '~/component/Image';
 import Search from '../Search';
 import config from '~/config';
+// import { useForm } from '~/';
 
 const cx = classNames.bind(styles);
 
@@ -61,6 +62,8 @@ const MENU_ITEMS = [
 ];
 
 function Header() {
+    // const { userInfor } = useForm();
+
     const handleMenuChange = (menuItem) => {
         console.log(menuItem);
     };
@@ -69,7 +72,7 @@ function Header() {
         {
             icon: <ProfileIcon />,
             title: 'View Profile',
-            to: '/@bitu',
+            // to: `/account/@${userInfor?.name}`,
         },
         {
             icon: <CoinIcon />,
@@ -94,7 +97,7 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <Link to={config.routes.home} className={cx('logo-link')}>
-                    <img src={images.logoTiktok} alt="Tiktok" />
+                    <img src={images.logoGaming} alt="Gaming" className={cx('logo')} />
                 </Link>
 
                 <Search />

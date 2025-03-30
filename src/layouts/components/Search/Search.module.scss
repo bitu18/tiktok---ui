@@ -14,11 +14,11 @@
     input {
         flex: 1;
         height: 100%;
+        padding-right: 40px;
         color: var(--black-color);
         font-size: 1.6rem;
-        padding: 12px 0;
-        background-color: transparent;
         caret-color: var(--primary-color);
+        background-color: transparent;
         font-family: var(--font-family);
     }
 
