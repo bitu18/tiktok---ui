@@ -21,7 +21,7 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Button from '~/component/Button';
 import Menu from '~/component/Popper/Menu';
-import Image from '../../../component/Image';
+import Image from 'src/component/Image';
 import Search from '../Search';
 import config from '~/config';
 // import { useForm } from '~/';
