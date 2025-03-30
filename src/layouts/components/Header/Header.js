@@ -132,11 +132,7 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <Image
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhLbDXZVcPpBmD4-DLdKuAMj6y3wwfD_1dg&usqp=CAU"
-                                className={cx('user-avatar')}
-                                alt="Bitu"
-                            />
+                            <Image src="" className={cx('user-avatar')} alt="Bitu" />
                         ) : (
                             <button className={cx('more-btn')}>
                                 <FontAwesomeIcon icon={faEllipsisVertical} />
