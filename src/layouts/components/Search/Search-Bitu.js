@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import { useEffect, useRef, useState } from 'react';
 import AccountItem from '~/component/AccountItem';
 import { Wrapper as PopperWrapper } from '~/component/Popper';
-import { SearchIcon } from '~/component/Icons';
+// import { SearchIcon } from '~/component/Icons';
 import { useDebounce } from '~/hooks';
 import styles from './Search.module.scss';
 import * as searchServices from '~/serivces/searchService';
@@ -68,7 +68,7 @@ function Search() {
                     <input
                         ref={inputRef}
                         value={searchValue}
-                        placeholder="Search for games..."
+                        placeholder="Search accounts and videos"
                         spellCheck={false}
                         onChange={(e) => setSearchValue(e.target.value.trimStart())}
                         onFocus={() => setShowResult(true)}
@@ -80,9 +80,9 @@ function Search() {
                     )}
                     {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
 
-                    <button className={cx('search-btn')} onMouseDown={(e) => e.preventDefault()}>
+                    {/* <button className={cx('search-btn')} onMouseDown={(e) => e.preventDefault()}>
                         <SearchIcon />
-                    </button>
+                    </button> */}
                 </div>
             </HeadlessTippy>
         </div>

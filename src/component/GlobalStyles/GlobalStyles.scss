@@ -1,14 +1,15 @@
 @import 'normalize.css';
 
 :root {
-    --primary-color: #fe2c55;
+    --primary-color: #d44e68;
     --black-color: #000;
     --white-color: #fff;
     --text-color: #161823;
+    --header-color: #202025;
 
     --font-family: 'TikTokFont', sans-serif;
 
-    --default-layout-header-height: 60px;
+    --default-layout-header-height: 70px;
     --default-layout-width: 1150px;
     --default-layout-horizontal-spacer: 24px;
 }
@@ -28,8 +29,9 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
-    color: var(--text-color);
+    color: var(--white-color);
     overflow-y: overlay;
+    background-color: #171d27;
 }
 
 // Scrollbar CSS
