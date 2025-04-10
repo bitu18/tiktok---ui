@@ -14,18 +14,18 @@ import {
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { Link } from 'react-router-dom';
-import {
-    UploadIcon,
-    InboxIcon,
-    MessageIcon,
-    ProfileIcon,
-    CoinIcon,
-    SettingsIcon,
-    LanguageIcon,
-    HelpIcon,
-    ShortcutsIcon,
-    LogoutIcon,
-} from '~/component/Icons/Icons';
+// import {
+//     UploadIcon,
+//     InboxIcon,
+//     MessageIcon,
+//     ProfileIcon,
+//     CoinIcon,
+//     SettingsIcon,
+//     LanguageIcon,
+//     HelpIcon,
+//     ShortcutsIcon,
+//     LogoutIcon,
+// } from '~/component/Icons/Icons';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';

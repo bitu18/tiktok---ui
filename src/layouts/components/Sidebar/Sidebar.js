@@ -1,14 +1,14 @@
 import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
 import Menu, { MenuItem } from './Menu';
-import {
-    HomeIcon,
-    HomeIconActive,
-    UserGroupIcon,
-    UserGroupIconActive,
-    LiveIcon,
-    LiveIconActive,
-} from '~/component/Icons';
+// import {
+//     HomeIcon,
+//     HomeIconActive,
+//     UserGroupIcon,
+//     UserGroupIconActive,
+//     LiveIcon,
+//     LiveIconActive,
+// } from '~/component/Icons';
 import config from '~/config';
 import Button from '~/component/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
