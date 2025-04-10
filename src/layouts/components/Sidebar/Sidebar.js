@@ -10,26 +10,29 @@ import {
     LiveIconActive,
 } from '~/component/Icons';
 import config from '~/config';
-import SuggestedAccounts from '~/component/SuggestedAccounts';
+import Button from '~/component/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+// import { faNoteSticky, faPenToSquare, faUser, faPenToSquare } from '@fortawesome/free-regular-svg-icons';
+import { faNoteSticky, faUsers, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
 function Sidebar() {
     return (
         <aside className={cx('wrapper')}>
+            <Button primary large leftIcon={<FontAwesomeIcon icon={faPlay} />} className={cx('btn')}>
+                Play
+            </Button>
             <Menu>
-                <MenuItem title="For You" to={config.routes.home} icon={<HomeIcon />} activeIcon={<HomeIconActive />} />
-                <MenuItem
-                    title="Following"
-                    to={config.routes.following}
-                    icon={<UserGroupIcon />}
-                    activeIcon={<UserGroupIconActive />}
-                />
-                <MenuItem title="LIVE" to={config.routes.live} icon={<LiveIcon />} activeIcon={<LiveIconActive />} />
+                <MenuItem title="Worksheets" to={config.routes.home} icon={<FontAwesomeIcon icon={faNoteSticky} />} />
+                {/* <MenuItem title="About us" to={config.routes.live} icon={<FontAwesomeIcon icon={faUsers} />} /> */}
+                <MenuItem title="Create" to={config.routes.following} icon={<FontAwesomeIcon icon={faPenToSquare} />} />
             </Menu>
 
+            {/* 
             <SuggestedAccounts label="Suggested Accounts" />
-            <SuggestedAccounts label="Following Accounts" />
+            <SuggestedAccounts label="Following Accounts" /> */}
         </aside>
     );
 }

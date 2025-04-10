@@ -31,20 +31,20 @@ function Search() {
         setShowResult(false);
     };
 
-    useEffect(() => {
-        if (!debouncedValue) {
-            setSearchResult([]);
-            return;
-        }
+    // useEffect(() => {
+    //     if (!debouncedValue) {
+    //         setSearchResult([]);
+    //         return;
+    //     }
 
-        const fetchApi = async () => {
-            setLoading(true);
-            const result = await searchServices.search(debouncedValue);
-            setSearchResult(result);
-            setLoading(false);
-        };
-        fetchApi();
-    }, [debouncedValue]);
+    //     const fetchApi = async () => {
+    //         setLoading(true);
+    //         const result = await searchServices.search(debouncedValue);
+    //         setSearchResult(result);
+    //         setLoading(false);
+    //     };
+    //     fetchApi();
+    // }, [debouncedValue]);
 
     return (
         // Using a wrapper <div> tag around the reference element solves this by creating a new parentNode context.
@@ -68,7 +68,7 @@ function Search() {
                     <input
                         ref={inputRef}
                         value={searchValue}
-                        placeholder="Search for games..."
+                        placeholder="Search for something..."
                         spellCheck={false}
                         onChange={(e) => setSearchValue(e.target.value.trimStart())}
                         onFocus={() => setShowResult(true)}

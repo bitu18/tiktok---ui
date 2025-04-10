@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'normalize.css';
-
 :root {
-    --primary-color: #d44e68;
+    --primary-color: #eda63a;
+    // #d44e68
     --black-color: #000;
     --white-color: #fff;
     --text-color: #161823;
-    --header-color: #202025;
+    --header-color: #71d4f8;
 
-    --font-family: 'TikTokFont', sans-serif;
+    --font-family: 'Noto Serif', sans-serif;
+    // 'TikTokFont', sans-serif
 
     --default-layout-header-height: 70px;
-    --default-layout-width: 1150px;
+    --default-layout-width: 100%;
     --default-layout-horizontal-spacer: 24px;
 }
 
@@ -31,7 +33,7 @@ body {
     text-rendering: optimizeSpeed;
     color: var(--white-color);
     overflow-y: overlay;
-    background-color: #171d27;
+    background-color: #f7f7f7;
 }
 
 // Scrollbar CSS
@@ -78,26 +80,26 @@ a {
 }
 
 // fonts embedded
-@font-face {
-    font-family: TikTokDisplayFont;
-    src: url('/assets/fonts/TikTokDisplayFont-Bold.woff2');
-    font-weight: 700;
-}
-@font-face {
-    font-family: TikTokFont;
-    src: url('/assets/fonts/TikTokFont-Bold.woff2');
-    font-weight: 700;
-}
-@font-face {
-    font-family: TikTokFont;
-    src: url('/assets/fonts/TikTokFont-Regular.woff2');
-    font-weight: 400;
-}
-@font-face {
-    font-family: TikTokFont;
-    src: url('/assets/fonts/TikTokFont-Semibold.woff2');
-    font-weight: 600;
-}
+// @font-face {
+//     font-family: TikTokDisplayFont;
+//     src: url('/assets/fonts/TikTokDisplayFont-Bold.woff2');
+//     font-weight: 700;
+// }
+// @font-face {
+//     font-family: TikTokFont;
+//     src: url('/assets/fonts/TikTokFont-Bold.woff2');
+//     font-weight: 700;
+// }
+// @font-face {
+//     font-family: TikTokFont;
+//     src: url('/assets/fonts/TikTokFont-Regular.woff2');
+//     font-weight: 400;
+// }
+// @font-face {
+//     font-family: TikTokFont;
+//     src: url('/assets/fonts/TikTokFont-Semibold.woff2');
+//     font-weight: 600;
+// }
 
 // Tippy css custom
 body {

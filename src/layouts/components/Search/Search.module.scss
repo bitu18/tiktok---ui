@@ -1,13 +1,13 @@
 .search,
 .search-results {
-    width: 361px;
+    width: 400px;
 }
 .search {
     position: relative;
     height: 40px;
     padding-left: 16px;
     // background-color: rgba(22, 24, 35, 0.06);
-    background-color: #3c3c3c;
+    background-color: var(--white-color);
     border-radius: var(--search-border-radius);
     display: flex;
     border: 1.5px solid var(--primary-color);
@@ -16,7 +16,7 @@
         flex: 1;
         height: 100%;
         padding-right: 40px;
-        color: var(--white-color);
+        color: var(--text-color);
         font-size: 1.6rem;
         caret-color: var(--primary-color);
         background-color: transparent;

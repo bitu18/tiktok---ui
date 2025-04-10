@@ -1,5 +1,5 @@
 const images = {
-    logoGaming: require('~/assets/images/WHITE.png'),
+    logoGaming: require('~/assets/images/textonly.png'),
     defaultImage: require('~/assets/images/default-image.jpg'),
 };
 
