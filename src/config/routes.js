@@ -1,10 +1,10 @@
 const routes = {
     home: '/',
-    following: '/following',
     profile: '/profile/:nickname',
-    upload: '/upload',
+    worksheet: '/worksheets',
+    create: '/create',
+    market: '/market',
     search: '/search',
-    live: '/live',
 };
 
 export default routes;

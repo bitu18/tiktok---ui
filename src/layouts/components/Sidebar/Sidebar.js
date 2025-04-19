@@ -12,7 +12,7 @@ import Menu, { MenuItem } from './Menu';
 import config from '~/config';
 import Button from '~/component/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faPlus, faStore } from '@fortawesome/free-solid-svg-icons';
 // import { faNoteSticky, faPenToSquare, faUser, faPenToSquare } from '@fortawesome/free-regular-svg-icons';
 import { faNoteSticky, faUsers, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,14 +25,23 @@ function Sidebar() {
                 Play
             </Button>
             <Menu>
-                <MenuItem title="Worksheets" to={config.routes.home} icon={<FontAwesomeIcon icon={faNoteSticky} />} />
+                <MenuItem
+                    title="Worksheets"
+                    to={config.routes.worksheet}
+                    icon={<FontAwesomeIcon icon={faNoteSticky} />}
+                />
                 {/* <MenuItem title="About us" to={config.routes.live} icon={<FontAwesomeIcon icon={faUsers} />} /> */}
-                <MenuItem title="Create" to={config.routes.following} icon={<FontAwesomeIcon icon={faPenToSquare} />} />
+                <MenuItem title="Create" to={config.routes.create} icon={<FontAwesomeIcon icon={faPenToSquare} />} />
+                <MenuItem title="Merchant" to={config.routes.market} icon={<FontAwesomeIcon icon={faStore} />} />
             </Menu>
 
             {/* 
             <SuggestedAccounts label="Suggested Accounts" />
             <SuggestedAccounts label="Following Accounts" /> */}
+
+            <Button primary small leftIcon={<FontAwesomeIcon icon={faPlus} />} className={cx('btn--upgrade')}>
+                Upgrade to Epic Tier
+            </Button>
         </aside>
     );
 }

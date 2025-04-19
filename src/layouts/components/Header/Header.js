@@ -31,7 +31,7 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Button from '~/component/Button';
 import Menu from '~/component/Popper/Menu';
-import Image from '~/component/Image/Image';
+import Image from '~/component/Image';
 import Search from '../Search';
 import config from '~/config';
 import { faKeyboard } from '@fortawesome/free-regular-svg-icons';
@@ -110,7 +110,7 @@ function Header() {
                 <div className={cx('actions')}>
                     {currentUser ? (
                         <>
-                            <Tippy delay={[0, 200]} content="Create" placement="bottom" offset={[0, 0]}>
+                            {/* <Tippy delay={[0, 200]} content="Create" placement="bottom" offset={[0, 0]}>
                                 <button className={cx('action-btn')}>
                                     <FontAwesomeIcon icon={faPenToSquare} />
                                 </button>
@@ -119,7 +119,7 @@ function Header() {
                                 <button className={cx('action-btn')}>
                                     <FontAwesomeIcon icon={faUsers} />
                                 </button>
-                            </Tippy>
+                            </Tippy> */}
                             {/* <Tippy delay={[0, 200]} content="Upload Video" placement="bottom" offset={[0, 0]}>
                                 <button className={cx('action-btn')}>
                                     <UploadIcon />

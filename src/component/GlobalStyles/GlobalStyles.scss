@@ -12,6 +12,7 @@
     // 'TikTokFont', sans-serif
 
     --default-layout-header-height: 70px;
+    --default-layout-sidebar-width: 230px;
     --default-layout-width: 100%;
     --default-layout-horizontal-spacer: 24px;
 }
@@ -31,7 +32,8 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
-    color: var(--white-color);
+    // color: var(--white-color);
+    color: var(--text-color);
     overflow-y: overlay;
     background-color: #f7f7f7;
 }
