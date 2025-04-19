@@ -31,7 +31,7 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Button from '~/component/Button';
 import Menu from '~/component/Popper/Menu';
-import Image from '~/component/Image';
+// import Image from '~/component/Image';
 import Search from '../Search';
 import config from '~/config';
 import { faKeyboard } from '@fortawesome/free-regular-svg-icons';
@@ -39,7 +39,7 @@ import { faKeyboard } from '@fortawesome/free-regular-svg-icons';
 
 const cx = classNames.bind(styles);
 
-const currentUser = true;
+const currentUser = false;
 
 const MENU_ITEMS = [
     // {
@@ -140,11 +140,11 @@ function Header() {
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
                             <div className={cx('user-infor')}>
-                                <Image
+                                {/* <Image
                                     src="https://lh3.googleusercontent.com/a/ACg8ocKc1ICnb9GX8PWH_926Iqh6IidJVYr544TLYJfXaHeYu0c=s96-c"
                                     className={cx('user-avatar')}
                                     alt="Bitu"
-                                />
+                                /> */}
                                 <h3 className={cx('name')}>BiTu</h3>
                             </div>
                         ) : (
