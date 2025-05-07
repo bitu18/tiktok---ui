@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import Input from '~/layouts/components/Input';
 import TitleForLogin from '~/layouts/components/TitleForLogin';
 import Button from '~/component/Button';
-import Image from '~/component/Image';
+import Image from '../../component/Image/Image';
 import styles from './LogIn.module.scss';
 import { useState } from 'react';
 import ButtonMethod from '~/layouts/components/ButtonMethod';
