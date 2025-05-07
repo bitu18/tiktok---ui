@@ -5,6 +5,8 @@ const routes = {
     create: '/create',
     market: '/market',
     search: '/search',
+    login: '/login',
+    signup: '/signup',
 };
 
 export default routes;

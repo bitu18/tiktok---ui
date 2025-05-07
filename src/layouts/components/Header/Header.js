@@ -105,7 +105,7 @@ function Header() {
                     <img src={images.logoGaming} alt="Gaming" className={cx('logo')} />
                 </Link>
 
-                <Search />
+                {/* <Search /> */}
 
                 <div className={cx('actions')}>
                     {currentUser ? (
@@ -128,10 +128,10 @@ function Header() {
                         </>
                     ) : (
                         <>
-                            <Button outline small>
+                            <Button outline small to={config.routes.login}>
                                 Login
                             </Button>
-                            <Button primary small style={{ padding: '5px 16px' }}>
+                            <Button primary small style={{ padding: '5px 16px' }} to={config.routes.signup}>
                                 Sign up
                             </Button>
                         </>

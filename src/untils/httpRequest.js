@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const httpRequest = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL,
+    // baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: 'http://localhost:3002/', // Adjust if your server runs on a different port
 });
 
 // export const get = async (path, options = {}) => {
@@ -10,7 +11,7 @@ const httpRequest = axios.create({
 // };
 
 httpRequest.interceptors.response.use((response) => {
-    return response.data;
+    return response;
 });
 
 export default httpRequest;

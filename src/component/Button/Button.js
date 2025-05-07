@@ -72,7 +72,7 @@ Button.propTypes = {
     children: PropTypes.node.isRequired,
     to: PropTypes.string,
     href: PropTypes.string,
-    normal: PropTypes.string,
+    normal: PropTypes.bool,
     primary: PropTypes.bool,
     outline: PropTypes.bool,
     rounded: PropTypes.bool,

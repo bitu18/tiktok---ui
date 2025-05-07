@@ -1,0 +1,30 @@
+.btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; // space between icon and title
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    width: 100%;
+    color: var(--text-color-loginAndSignup);
+
+    &:hover {
+        // filter: brightness(110%);
+        background-color: rgba(249, 233, 208, 0.5);
+    }
+
+    + .btn {
+        margin: 16px 0;
+    }
+}
+
+.left-icon {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 36%;
+}
