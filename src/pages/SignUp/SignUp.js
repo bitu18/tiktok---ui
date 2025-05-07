@@ -10,7 +10,7 @@ import { Fragment, useState } from 'react';
 import ButtonMethod from '~/layouts/components/ButtonMethod';
 import Input from '~/layouts/components/Input';
 
-import Image from '~/component/Image';
+import Image from '../../component/Image/Image';
 import googleIcon from '~/assets/images/google-icon.png';
 
 const cx = classNames.bind(styles);
