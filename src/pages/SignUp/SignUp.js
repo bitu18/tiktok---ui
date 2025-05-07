@@ -10,7 +10,7 @@ import { Fragment, useState } from 'react';
 import ButtonMethod from '~/layouts/components/ButtonMethod';
 import Input from '~/layouts/components/Input';
 
-import Image from '~/component/Image';
+// import Image from '~/component/Image';
 
 import googleIcon from '~/assets/images/google-icon.png';
 
@@ -164,7 +164,7 @@ function SignUp() {
                         />
                         <ButtonMethod
                             title="Google"
-                            leftIcon={<Image src={googleIcon} className={cx('google-icon')} alt="google-icon" />}
+                            // leftIcon={<Image src={googleIcon} className={cx('google-icon')} alt="google-icon" />}
                         />
                     </div>
                 )}

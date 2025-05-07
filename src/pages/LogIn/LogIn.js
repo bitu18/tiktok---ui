@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import Input from '~/layouts/components/Input';
 import TitleForLogin from '~/layouts/components/TitleForLogin';
 import Button from '~/component/Button';
-import Image from '~/component/Image';
+// import Image from '~/component/Image';
 import styles from './LogIn.module.scss';
 import { useState } from 'react';
 import ButtonMethod from '~/layouts/components/ButtonMethod';
@@ -76,7 +76,7 @@ function LogIn() {
 
             <ButtonMethod
                 title="Google"
-                leftIcon={<Image src={googleIcon} className={cx('google-icon')} alt="google-icon" />}
+                // leftIcon={<Image src={googleIcon} className={cx('google-icon')} alt="google-icon" />}
             />
         </div>
     );
