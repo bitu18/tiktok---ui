@@ -9,6 +9,7 @@
     padding: 6px 33px;
     margin: 8px 0;
     width: 190px;
+    width: 100%;
 
     &.active {
         color: var(--header-color);
@@ -20,7 +21,9 @@
         background-color: var(--white-color);
     }
 }
-
+.icon {
+    width: 22px;
+}
 .title {
     margin-left: 10px;
 }
